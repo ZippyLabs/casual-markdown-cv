@@ -46,6 +46,26 @@
     margin: 3px 0;
   }
 
+  .contact-info {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    color: white;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+
   a:link { color: white; text-decoration: none; }
   a:hover { color: white; text-decoration: underline; }
   a:visited { color: white; text-decoration: none; }
@@ -68,13 +88,16 @@
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
 <!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
-<span style="float:right;padding:6px;color:white"> 
-  <a href="mailto:ruben.ascarzapenas@gmail.com">ruben.ascarzapenas@gmail.com</a> <br> +34 622071611
-</span>
-<span style="float:right;padding:6px; width:20px">
-  <img id="mail" src="contact_mail.svg" style="float:right; padding:2px; width:20px" />
-  <img id="phone" src="contact_phone.svg" style="float:right; padding:2px; width:20px" />
-</span> 
+<div class="contact-info">
+  <div class="contact-item">
+    <img class="contact-icon" src="contact_mail.svg" alt="email" />
+    <a href="mailto:ruben.ascarzapenas@gmail.com">ruben.ascarzapenas@gmail.com</a>
+  </div>
+  <div class="contact-item">
+    <img class="contact-icon" src="contact_phone.svg" alt="phone" />
+    <span>+34 622071611</span>
+  </div>
+</div>
 # Analista SOC & SIEM Specialist 
 
 ## Perfil Profesional
