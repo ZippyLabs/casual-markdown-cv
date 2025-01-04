@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<title>Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
+<script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
+<style>  
+  body { 
+    line-height: 1.3; 
+    margin: 0; 
+    padding: 8px; 
+    max-width: 1024px; 
+    display: none; 
+    font-family: Arial;
+    font-size: 11px;
+  }
+  
+  h1 { 
+    font-size: 180%; 
+    padding: 12px; 
+    margin-top: 0;
+    margin-bottom: 12px;
+    border: 1px solid lightgrey; 
+    background: steelblue; 
+    color: white;
+  }
+  
+  h2 { 
+    border-bottom: 1px solid grey; 
+    padding: 2px; 
+    color: steelblue;
+    margin: 8px 0;
+    font-size: 140%;
+  }
+
+  h4 {
+    margin: 6px 0;
+    font-size: 110%;
+  }
+  
+  ul {
+    margin: 6px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin: 3px 0;
+  }
+
+  a:link { color: white; text-decoration: none; }
+  a:hover { color: white; text-decoration: underline; }
+  a:visited { color: white; text-decoration: none; }
+
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    @page {
+      margin: 0.5cm;
+      size: A4;
+    }
+
+    .no-break {
+      break-inside: avoid;
+    }
+  }
+</style>
+<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
+<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
+<span style="float:right;padding:6px;color:white"> 
+  <a href="mailto:ruben.ascarzapenas@gmail.com">ruben.ascarzapenas@gmail.com</a> <br> +34 622071611
+</span>
+<span style="float:right;padding:6px; width:20px">
+  <img id="mail" src="contact_mail.svg" style="float:right; padding:2px; width:20px" />
+  <img id="phone" src="contact_phone.svg" style="float:right; padding:2px; width:20px" />
+</span> 
+# Analista SOC & SIEM Specialist 
+
+## Perfil Profesional
+
+* 2 años de experiencia 
+* Rapid7 Insight IDR SIEM, Rapid7 Insight VM y Sophos XDR.
+* Gestión de incidentes de seguridad, implementación de SIEM y análisis de amenazas. 
+* Automatización de procesos y desarrollo de casos de uso. 
+* Python, Bash, Docker
+
+## Experiencia Profesional
+
+#### Global Technology (Analista SOC, 2022/10 - Presente) 
+
+* Gestión de incidentes de seguridad (Nivel 1 y 2) en entorno multicliente, asegurando tiempos de respuesta óptimos y comunicación efectiva.
+* Liderazgo en proyectos de despliegue de SIEM:
+    * Integración de fuentes de log
+    * Personalización de alertas y casos de uso
+    * Desarrollo de dashboards para monitorización
+    * Capacitación de usuarios finales
+* Gestión de seguridad en entornos PCI.
+* Implementación de procesos de Threat Intelligence.
+* Reducción de falsos positivos mediante la optimización de reglas de detección.
+
+## Formación Académica
+
+* Ingenieria en Sistemas de Información | Universidad de Alcalá
+* Introducción a Linux | Hack4u | 2023
+* Introducción al Hacking | Hack4u | En curso
+
+## Soft Skills
+
+* Habilidad para tranquilizar y guiar a clientes durante incidentes críticos.
+* Escucha activa y comunicación empática en situaciones de crisis.
+* Alta tolerancia a la frustración en la resolución de problemas complejos.
+* Enfoque constante en la mejora continua y el aprendizaje.
+* Disposición para compartir conocimientos y apoyar a compañeros
+* Enfoque metodológico en la resolución de problemas
+
+## Idiomas
+
+* Español: Nativo
+* Inglés: B2 fluido - Experiencia en presentaciones de informes técnicos a clientes. 
+
+## Logros Adicionales
+
+* Participación en DFIR Labs CTF, HackTheBox y otros.
