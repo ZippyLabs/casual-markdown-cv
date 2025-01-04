@@ -86,18 +86,31 @@
     }
   }
 </style>
-<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
-<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
-<div class="contact-info">
-  <div class="contact-item">
-    <img class="contact-icon" src="contact_mail.svg" alt="email" />
-    <a href="mailto:ruben.ascarzapenas@gmail.com">ruben.ascarzapenas@gmail.com</a>
-  </div>
-  <div class="contact-item">
-    <img class="contact-icon" src="contact_phone.svg" alt="phone" />
-    <span>+34 622071611</span>
-  </div>
-</div>
+<script>
+window.onload = function() {
+    // Primero procesamos el markdown
+    document.body.innerHTML = md.html(document.body.innerHTML);
+    
+    // Luego añadimos la información de contacto
+    const header = document.querySelector('h1');
+    const contactInfo = document.createElement('div');
+    contactInfo.className = 'contact-info';
+    contactInfo.innerHTML = `
+        <div class="contact-line">
+            <img class="contact-icon" src="contact_mail.svg" alt="email" />
+            <a href="mailto:ruben.ascarzapenas@gmail.com">ruben.ascarzapenas@gmail.com</a>
+        </div>
+        <div class="contact-line">
+            <img class="contact-icon" src="contact_phone.svg" alt="phone" />
+            <span>+34 622071611</span>
+        </div>
+    `;
+    header.insertAdjacentElement('beforebegin', contactInfo);
+    
+    // Finalmente mostramos el body
+    document.body.style.display = 'block';
+};
+</script>
 # Analista SOC & SIEM Specialist 
 
 ## Perfil Profesional
